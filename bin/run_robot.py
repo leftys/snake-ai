@@ -132,6 +132,8 @@ if not robot_class:
         robot_class = args.class_
     else:
         robot_class = robot_class(ROBOT_CLASS_DEFAULT)
+import main
+robot_class = main.MyRobotSnake
 
 if args.validate:
     with contextlib.redirect_stdout(open(os.devnull, 'w')):
